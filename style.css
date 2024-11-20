@@ -1,0 +1,494 @@
+/* Reset and universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.main {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Header styling */
+.mainhead {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4; /* Optional background color */
+}
+
+/* Header content */
+.head {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between image and text */
+}
+
+/* Logo styling */
+.head {
+  border-radius: 50%; /* Circular logo */
+  width: 600px;
+  height: 60px;
+}
+
+img {
+  width: 80px;
+  border-radius: 30%;
+  transition: all 0.3s;
+}
+img:hover {
+  scale: 1.25;
+}
+/* Heading and link */
+h1 a {
+  text-decoration: none;
+  color: #5c53e1;
+  font-size: 1.7rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+h1 a:hover {
+  color: #007acc; /* Optional hover effect */
+}
+.allcontent {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px; /* Space between content sections */
+}
+.title {
+  width: 100%;
+  max-width: 500px;
+}
+.theading h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.titlebox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Space between input fields */
+}
+
+.titlebox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.titlebox input:focus {
+  outline: none;
+  border-color: #5c53e1;
+}
+.sheading h3,
+.wheading h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.subtitle {
+  width: 100%;
+  max-width: 600px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #5c53e1;
+  box-shadow: 0 0 5px rgba(92, 83, 225, 0.5);
+}
+.work {
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wfirst,
+.wsecond,
+.wthird,
+.wfourth,
+.wfive,
+.wsix,
+.wseven,
+.weight,
+.wnine {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.wfirst .wfinputone {
+  width: 500px;
+}
+.wfirst .auto-grow {
+  min-width: 200px; /* Minimum width for better appearance */
+  width: auto; /* Makes the input adapt to content size */
+  max-width: 100%; /* Prevents it from exceeding the container */
+  flex-grow: 1; /* Allows the input to stretch within available space */
+}
+.wfourth input,
+.wfive input,
+.wsix input,
+.wseven input,
+.weight input,
+.wnine input {
+  width: 31%;
+}
+/* Skills section container */
+.skills {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Skills heading container */
+.skheadinng {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures spacing between heading and search box */
+  width: 100%; /* Stretches the container to match the parent width */
+  gap: 20px; /* Adds spacing between elements inside the container */
+}
+
+/* Heading */
+.skheadinng h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Search input styling */
+.skheadinng input[type="search"] {
+  width: 250px; /* Adjust width of the search box */
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.skheadinng input[type="search"]:focus {
+  outline: none;
+  border-color: #5c53e1;
+  box-shadow: 0 0 5px rgba(92, 83, 225, 0.5);
+}
+.prolang,
+.frontlang,
+.backlang,
+.moblang,
+.ailang,
+.datlang {
+  margin: 20px;
+}
+.prolang h5,
+.frontlang h5,
+.backlang h5,
+.moblang,
+.ailang h5,
+.datlang h5 {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  gap: 20px;
+}
+.languages,
+.flanguages,
+.blanguage,
+.molanguage,
+.artificallang,
+.datalanguage {
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap for responsiveness */
+  gap: 30px;
+  justify-content: flex-start; /* Align items to the left */
+}
+.clanghead,
+.cpplanghead,
+.cslanghead,
+.golanghead,
+.javalanghead,
+.typelanghead,
+.javasclanghead,
+.phplanghead,
+.pythonlanghead,
+.rubylanghead,
+.swiftlanghead,
+.scalalanghead,
+.objclanghead,
+.rustlanghead,
+.clolanghead,
+.elilanghead,
+.erlanghead,
+.cofflanghead,
+.vuelanghead,
+.reactlanghead,
+.anglanghead,
+.bootlanghead,
+.backlanghead,
+.vuetilanghead,
+.htmllanghead,
+.csslanghead,
+.gulplanghead,
+.sasslanghead,
+.bulmalanghead,
+.reduxlanghead,
+.taillanghead,
+.babellanghead,
+.qtlanghead,
+.nodelanghead,
+.springlanghead,
+.explanghead,
+.graplanghead,
+.hadooplanghead,
+.kafkalanghead {
+  width: 20%;
+}
+.c,
+.cpp,
+.cs,
+.go,
+.java,
+.type,
+.javasc,
+.php,
+.python,
+.ruby,
+.swift,
+.scala,
+.objc,
+.rust,
+.clo,
+.eli,
+.er,
+.coff,
+.vue,
+.react,
+.ang,
+.boot,
+.back,
+.vueti,
+.html,
+.css,
+.gulp,
+.sass,
+.bulma,
+.redux,
+.tail,
+.babel,
+.qt,
+.node,
+.spring,
+.exp,
+.grap,
+.hadoop,
+.kafka {
+  display: flex;
+  align-items: center;
+
+  position: relative; /* Needed for the tooltip positioning */
+  gap: 20px;
+}
+.c input,
+.cpp input,
+.cs input,
+.go input,
+.java input,
+.type input,
+.javasc input,
+.php input,
+.python input,
+.ruby input,
+.swift input,
+.scala input,
+.objc input,
+.rust input,
+.clo input,
+.eli input,
+.er input,
+.coff input,
+.vue input,
+.react input,
+.ang input,
+.boot input,
+.back input,
+.vueti input,
+.html input,
+.css input,
+.gulp input,
+.sass input,
+.bulma input,
+.redux input,
+.tail input,
+.babel input,
+.qt input,
+.node input,
+.spring input,
+.exp input,
+.grap input,
+.hadoop input,
+.kafka input[type="checkbox"] {
+  transform: scale(1.5);
+}
+.tooltip {
+  position: absolute;
+  bottom: 100%; /* Position above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333; /* Tooltip background */
+  color: #fff; /* Tooltip text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap; /* Prevents text wrapping */
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Hidden by default */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth appearance */
+  z-index: 10;
+}
+
+.icon-wrapper:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.proglang,
+.fronlang,
+.backendlang,
+.mobilelang,
+.aiml,
+.database {
+  position: relative;
+  display: inline-block;
+}
+.icon-wrapper {
+  position: relative; /* Needed for tooltip positioning */
+}
+.proglang,
+.fronlang,
+.backendlang,
+.mobilelang,
+.aiml,
+.database {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px; /* Optional rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  cursor: pointer;
+}
+.proglang:hover,
+.fronlang:hover,
+.backendlang:hover,
+.mobilelang:hover,
+.aiml:hover,
+.database:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+hr {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+.rabbitlanghead,
+.androidlanghead,
+.flutterlanghead,
+.dartlanghead,
+.swiftlanghead,
+.xamarinlanghead,
+.apachelanghead,
+.kotlinlanghead,
+.tensorlanghead,
+.pytolanghead,
+.pandalanghead,
+.ocvlanghead,
+.sealanghead,
+.molanghead,
+.mysqllanghead,
+.mysqllanghead,
+.postsqlanghead,
+.oraclanghead,
+.hivelanghead,
+.sqlitelanghead,
+.mssqllanghead {
+  width: 20%;
+}
+.rabbit input,
+.flutter input,
+.dart input,
+.swift input,
+.xamarin input,
+.apache input,
+.kotlin input,
+.android input,
+.tensor input,
+.pyto input,
+.panda input,
+.ocv input,
+.sea input,
+.mo input,
+.mysql input,
+.mysql input,
+.postsq input,
+.orac input,
+.hive input,
+.sqlite input,
+.mssql input[type="checkbox"] {
+  transform: scale(1.5);
+}
+.rabbit,
+.flutter,
+.dart,
+.swift,
+.xamarin,
+.apache,
+.kotlin,
+.android,
+.tensor,
+.pyto,
+.panda,
+.ocv,
+.sea,
+.mo,
+.mysql,
+.mysql,
+.postsq,
+.orac,
+.hive,
+.sqlite,
+.mssql {
+  display: flex;
+  align-items: center;
+
+  position: relative; /* Needed for the tooltip positioning */
+  gap: 20px;
+}
