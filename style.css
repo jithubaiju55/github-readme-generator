@@ -209,7 +209,12 @@ input[type="text"]:focus {
 .backlang,
 .moblang,
 .ailang,
-.datlang {
+.datlang,
+.dvisu,
+.frlanguage,
+.softhead,
+.game,
+.other {
   margin: 20px;
 }
 .prolang h5,
@@ -217,7 +222,12 @@ input[type="text"]:focus {
 .backlang h5,
 .moblang,
 .ailang h5,
-.datlang h5 {
+.datlang h5,
+.dvisu h5,
+.frlanguage h5,
+.softhead h5,
+.game h5,
+.other h5 {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   gap: 20px;
@@ -227,7 +237,12 @@ input[type="text"]:focus {
 .blanguage,
 .molanguage,
 .artificallang,
-.datalanguage {
+.datalanguage,
+.datav,
+.frame,
+.soft,
+.gamesoft,
+.othersoft {
   margin-top: 20px;
   margin-left: 50px;
   display: flex;
@@ -388,7 +403,12 @@ input[type="text"]:focus {
 .backendlang,
 .mobilelang,
 .aiml,
-.database {
+.database,
+.datavisualization,
+.framework,
+.software,
+.gameengine,
+.othersoftware {
   position: relative;
   display: inline-block;
 }
@@ -400,7 +420,12 @@ input[type="text"]:focus {
 .backendlang,
 .mobilelang,
 .aiml,
-.database {
+.database,
+.datavisualization,
+.framework,
+.software,
+.gameengine,
+.othersoftware {
   width: 50px;
   height: 50px;
   border-radius: 5px; /* Optional rounded corners */
@@ -412,8 +437,13 @@ input[type="text"]:focus {
 .backendlang:hover,
 .mobilelang:hover,
 .aiml:hover,
-.database:hover {
-  transform: scale(1.2); /* Zoom effect on hover */
+.database:hover,
+.datavisualization:hover,
+.framework:hover,
+.software:hover,
+.gameengine:hover,
+.othersoftware:hover {
+  transform: scale(1.2);
 }
 hr {
   border: 1px solid #ddd;
@@ -439,7 +469,28 @@ hr {
 .oraclanghead,
 .hivelanghead,
 .sqlitelanghead,
-.mssqllanghead {
+.mssqllanghead,
+.d3jslanghead,
+.chartlanghead,
+.canvaslanghead,
+.kibanalanghead,
+.dotnetlanghead,
+.laravellanghead,
+.djangolanghead,
+.railslanghead,
+.ginlanghead,
+.flasklanghead,
+.photoshop,
+.illustrator,
+.blender,
+.sketch,
+.postman,
+.unity,
+.unreal,
+.godot,
+.linux,
+.git,
+.arduino {
   width: 20%;
 }
 .rabbit input,
@@ -462,7 +513,28 @@ hr {
 .orac input,
 .hive input,
 .sqlite input,
-.mssql input[type="checkbox"] {
+.mssql input,
+.d3js input,
+.chart input,
+.canvas input,
+.kibana input,
+.dotnet input,
+.laravel input,
+.django input,
+.rails input,
+.gin input,
+.flask input,
+.phot input,
+.illu input,
+.blen input,
+.ske input,
+.post input,
+.gunity input,
+.gunreal input,
+.ggodot input,
+.lin input,
+.gith input,
+.ard input[type="checkbox"] {
   transform: scale(1.5);
 }
 .rabbit,
@@ -485,7 +557,28 @@ hr {
 .orac,
 .hive,
 .sqlite,
-.mssql {
+.mssql,
+.d3js,
+.chart,
+.canvas,
+.kibana,
+.dotnet,
+.laravel,
+.django,
+.rails,
+.gin,
+.flask,
+.phot,
+.illu,
+.blen,
+.ske,
+.post,
+.gunity,
+.gunreal,
+.ggodot,
+.lin,
+.gith,
+.ard {
   display: flex;
   align-items: center;
 
